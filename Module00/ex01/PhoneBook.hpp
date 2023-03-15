@@ -9,8 +9,6 @@ class PhoneBook
 public:
     Contact people[8];
     int sayac;
-    PhoneBook(){};
-    ~PhoneBook(){};
 };
 
 #endif

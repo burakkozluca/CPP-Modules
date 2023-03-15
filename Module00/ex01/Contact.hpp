@@ -11,7 +11,6 @@ public:
     std::string nickname;
     std::string number;
     std::string secret;
-    Contact();
 };
 
 #endif
