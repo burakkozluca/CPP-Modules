@@ -78,7 +78,7 @@ int main()
         }
         else
         {
-            std::cout << "\033[0;33m\033[1m<----->Lütfen Bir Komut Girin<----->\033[0m" << std::endl;
+            std::cout << "\033[0;33m\033[1m<----->Lütfen Geçerli Bir Komut Girin<----->\033[0m" << std::endl;
         }
     }
 }
