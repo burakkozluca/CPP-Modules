@@ -1,5 +1,10 @@
 #include "Zombie.hpp"
 
+void Zombie::announce(void)
+{
+    std::cout << this->name <<": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
 //constructor
 Zombie::Zombie()
 {
@@ -9,9 +14,4 @@ Zombie::Zombie()
 Zombie::~Zombie()
 {
     std::cout << "Zombie has been died" << std::endl;
-}
-
-Zombie* zombieHorde( int N, std::string name )
-{
-    
 }

@@ -1,4 +1,4 @@
-NAME = MoarBraiiiiiiinnnzzzZ
+NAME = HITHISISBRAIN
 CC = c++
 CLAFGS = -Wall -Wextra -Werror
 SRCS = *.cpp
