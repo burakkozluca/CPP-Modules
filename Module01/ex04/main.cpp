@@ -31,8 +31,6 @@ void ft_replace(std::string filename, std::string s1, std::string s2)
         {
             beforeoc = temp.substr(0, pos);
             afteroc = temp.substr(pos + s1.size(), temp.size());
-            //String addition -> we have to careful this line so if you wanna use integer
-            //!it isn't important because 5+3 = 3+5 but string red + blue = redblue != blue + red = bluered
             temp = beforeoc + s2 + afteroc;
             pos = temp.find(s1);
         }
