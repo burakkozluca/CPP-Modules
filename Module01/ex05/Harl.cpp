@@ -2,9 +2,35 @@
 
 #include "Harl.hpp"
 
+int fx(const char *arg)
+{
+    std::string str[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+
+    int i = 0;
+    while(i < 4)
+    {
+        if(str[i] == arg)
+            return(i);
+        i++;
+    }
+    return (-1);
+}
+
 void Harl::complain(std::string level)
 {
-
+    switch (fx(level.c_str()))
+    {
+    case 0:
+        this->debug();
+    case 1:
+        info();
+    case 2:
+        warning();
+    case 3:
+        error();
+    default:
+        std::cout << "Probably complaining about insignificant problems" << std::endl;
+    }
 }
 
 void Harl::debug()
