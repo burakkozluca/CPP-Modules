@@ -9,9 +9,15 @@ class Fixed
         int num;
         static const int bits = 8;
     public:
-        Fixed(); //Sabit nokta sayı degerini 0 olarak başlat
-        
+        Fixed();
+        Fixed(int const say);
+        Fixed(const Fixed& Copy);
+        Fixed &operator=(const Fixed& other); //Overload
         ~Fixed();
+        std::string str;
+        
+        int getRawBits() const;
+        void setRawBits(int const raw);
 };
 
 #endif
