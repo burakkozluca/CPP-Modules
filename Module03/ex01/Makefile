@@ -1,4 +1,4 @@
-NAME = ClapTrap
+NAME = ScavTrap
 CC = c++
 CLAFGS = -Wall -Wextra -Werror
 SRCS = $(wildcard *.cpp)
