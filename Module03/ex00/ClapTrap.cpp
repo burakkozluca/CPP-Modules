@@ -7,7 +7,7 @@ ClapTrap::ClapTrap(std::string name)
     std::cout << "ClapTrap Constructor" << std::endl;
     this->setHitPoints(10);
     this->setEnergyPoint(10);
-    this->setAttackDamage(10);
+    this->setAttackDamage(0);
     this->setName(name);
 }
 
@@ -33,6 +33,7 @@ void ClapTrap::takeDamage(unsigned int amount)
         std::cout << "ClapTrap " << this->name << " takes "
         << amount << " points of damage! " << std::endl;
         this->hitPoints -= amount;
+        this->energyPoints--;
         if (this->hitPoints <= 0)
             std::cout << "\033[1;91mdead...\033[0m" << std::endl;
     }
